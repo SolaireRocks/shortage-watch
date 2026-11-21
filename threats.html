@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shortage Watch · Threats</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232f6fde'/><path d='M7 22l6-7 5 4 7-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="stylesheet" href="static/style.css?v=8408107762">
+<script src="static/vendor/echarts.min.js"></script>
+<script src="static/app.js?v=8408107762"></script>
+</head>
+<body data-root="" data-public="1">
+
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--accent)"/><path d="M7 22l6-7 5 4 7-9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Shortage Watch
+    </a>
+    <nav class="main">
+      <a href="index.html" class="">Today</a><a href="chain.html" class="">The chain</a><a href="indicators.html" class="">Indicators</a><a href="news.html" class="">News &amp; sentiment</a><a href="threats.html" class="on">Threats</a><a href="medicines.html" class="">Medicines</a><a href="briefings.html" class="">Briefings</a>
+    </nav>
+    
+  </div>
+</header>
+
+<main>
+
+
+<div class="section-title" style="margin-top:0">
+  <h1 style="margin:0">Threats</h1>
+  <span class="muted small">Four upstream gauges, so the forecast sees shocks before they reach prices. 50 = normal. They feed incoming pressure, never the SPI.</span>
+</div>
+
+<div class="grid g4">
+  
+  <div class="panel">
+    <div class="muted small">Conflict and geopolitics</div>
+    
+    <div id="g-conflict" class="threat-gauge"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap">
+      <span class="spi-pill band-normal">Normal</span>
+      <span class="small muted mono">7d -22.9 · 30d +1.7</span>
+    </div>
+    
+    
+    <p class="small faint" style="margin:.5em 0 0">2 of 14 series scored.</p>
+    <ul class="threat-top"><li><a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">Listed sites with unusual heat detections</a><span class="score" style="background: color-mix(in srgb, var(--normal) 0.0%, var(--panel-2)); color: var(--text)">+0.00</span></li><li><a href="https://ucdp.uu.se/downloads/" target="_blank" rel="noopener">Conflict deaths worldwide (UCDP)</a><span class="score" style="background: color-mix(in srgb, var(--normal) 2.0%, var(--panel-2)); color: var(--text)">-0.07</span></li></ul>
+    <details class="small" style="margin-top:6px"><summary>Waiting for data (11)</summary><span class="faint">Conflict news tone: Persian Gulf and Hormuz, Conflict articles: Red Sea, Conflict news tone: Red Sea, Conflict articles: Black Sea and Ukraine, Conflict news tone: Black Sea and Ukraine, Conflict articles: Taiwan Strait, Conflict news tone: Taiwan Strait, Aircraft vs 4-week norm: Persian Gulf, Aircraft vs 4-week norm: Southern Red Sea, Aircraft vs 4-week norm: Black Sea, Aircraft vs 4-week norm: Taiwan Strait</span></details>
+  </div>
+  
+  <div class="panel">
+    <div class="muted small">Economy</div>
+    
+    <div id="g-economy" class="threat-gauge"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap">
+      <span class="spi-pill band-normal">Normal</span>
+      <span class="small muted mono">7d +5.8 · 30d -2.3</span>
+    </div>
+    
+    
+    <p class="small faint" style="margin:.5em 0 0">12 of 12 series scored.</p>
+    <ul class="threat-top"><li><a href="https://fred.stlouisfed.org/series/VIXCLS" target="_blank" rel="noopener">VIX volatility index</a><span class="score" style="background: color-mix(in srgb, var(--severe) 62.0%, var(--panel-2)); color: #fff">+2.50</span></li><li><a href="https://fred.stlouisfed.org/series/BAMLH0A0HYM2" target="_blank" rel="noopener">High-yield credit spread</a><span class="score" style="background: color-mix(in srgb, var(--severe) 37.0%, var(--panel-2)); color: var(--text)">+1.47</span></li><li><a href="https://www.eia.gov/electricity/gridmonitor/" target="_blank" rel="noopener">US grid demand after weather and weekday, 4 weeks</a><span class="score" style="background: color-mix(in srgb, var(--normal) 8.0%, var(--panel-2)); color: var(--text)">-0.33</span></li></ul>
+    
+  </div>
+  
+  <div class="panel">
+    <div class="muted small">Disease</div>
+    
+    <div id="g-disease" class="threat-gauge"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap">
+      <span class="spi-pill band-elevated">Elevated</span>
+      <span class="small muted mono">7d +4.2 · 30d +10.6</span>
+    </div>
+    
+    
+    <p class="small faint" style="margin:.5em 0 0">12 of 14 series scored.</p>
+    <ul class="threat-top"><li><a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" target="_blank" rel="noopener">El Nino or La Nina strength (|ONI|)</a><span class="score" style="background: color-mix(in srgb, var(--severe) 98.0%, var(--panel-2)); color: #fff">+3.92</span></li><li><a href="https://data.cdc.gov/d/vjzj-u7u8" target="_blank" rel="noopener">Emergency visits: influenza</a><span class="score" style="background: color-mix(in srgb, var(--severe) 78.0%, var(--panel-2)); color: #fff">+3.13</span></li><li><a href="https://data.cdc.gov/d/atcp-73re" target="_blank" rel="noopener">Wastewater viral activity: SARS-CoV-2</a><span class="score" style="background: color-mix(in srgb, var(--severe) 42.0%, var(--panel-2)); color: var(--text)">+1.69</span></li></ul>
+    
+  </div>
+  
+  <div class="panel">
+    <div class="muted small">Infrastructure and natural hazards</div>
+    
+    <div id="g-infrastructure" class="threat-gauge"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap">
+      <span class="spi-pill band-elevated">Elevated</span>
+      <span class="small muted mono">7d +5.0 · 30d -9.9</span>
+    </div>
+    
+    
+    <p class="small faint" style="margin:.5em 0 0">6 of 12 series scored.</p>
+    <ul class="threat-top"><li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">New actively exploited vulnerabilities, 30 days</a><span class="score" style="background: color-mix(in srgb, var(--severe) 48.0%, var(--panel-2)); color: var(--text)">+1.91</span></li><li><a href="https://www.fda.gov/drugs/drug-safety-and-availability/drug-recalls" target="_blank" rel="noopener">FDA Class I/II drug recalls, last 90 days</a><span class="score" style="background: color-mix(in srgb, var(--severe) 21.0%, var(--panel-2)); color: var(--text)">+0.84</span></li><li><a href="https://earthquake.usgs.gov/earthquakes/map/" target="_blank" rel="noopener">Magnitude 6.5+ earthquakes, 30 days</a><span class="score" style="background: color-mix(in srgb, var(--severe) 17.0%, var(--panel-2)); color: var(--text)">+0.67</span></li></ul>
+    
+  </div>
+  
+</div>
+
+
+<div class="section-title"><h2>Threat briefings</h2><span class="small muted">one per threat, each written by its own model call from only that threat's data</span></div>
+<div class="topic-cards">
+  
+  <div class="panel topic-card">
+    <div class="muted small" style="display:flex;justify-content:space-between;gap:8px;align-items:center">
+      <span>Conflict and geopolitics · 2026-11-21</span><span class="spi-pill band-normal">Normal</span>
+    </div>
+    <p class="t-head">Conflict risks hold steady while Strait of Hormuz traffic remains severely depressed at 2.3 transits per day.</p>
+    
+    <details class="small"><summary>Read the summary</summary><div class="prose"><h3>Current Situation</h3>
+<p>The geopolitical risk index stands at 49.0, remaining squarely in the normal band. Worldwide conflict indicators show limited marginal change over the past week: NASA FIRMS reports zero listed energy or fertilizer infrastructure sites exhibiting unusual thermal anomalies, and monthly organized violence fatalities tracked by the Uppsala Conflict Data Program (UCDP) remain near baseline levels at 13,286 deaths for the latest reporting month. Recent reports from Crisis Group focus on localized violence in Sudan and South Sudan, which do not directly jeopardize major global export corridors for energy or agricultural inputs.</p>
+<h3>Chokepoint &amp; Conflict Shock Outlook</h3>
+<p>The Strait of Hormuz remains effectively shuttered to standard commercial maritime traffic. The latest reading from IMF PortWatch records only 2.0 daily transits, yielding a 7-day moving average of 2.3 ships per day. Because resolution requires a 7-day average exceeding 60 transits per day, a rapid reopening within one month remains exceptionally unlikely (2.5%). While Polymarket's aggregated one-month anchor shows 26.5%, this figure is distorted by an illiquid mid-December contract, whereas the December 31 contract sits near 2.9%. Longer horizons reflect gradually increasing odds of eventual diplomatic or naval resolution (35% within six months; 55% within a year).</p>
+<p>For a new major conflict shock involving a top-five commodity exporter, probabilities remain closely anchored to historical baselines: 0.9% across one month and 11% over the next year. Prediction markets price the likelihood of a Chinese blockade of Taiwan before year-end at 2.35%, reflecting low short-term escalation risk.</p>
+<h3>What to Watch</h3>
+<p>Key metrics to monitor include IMF PortWatch daily transit numbers through the Strait of Hormuz, maritime insurance rate adjustments in the Persian Gulf, and thermal surveillance around critical export terminals.</p></div></details>
+    <a class="small" href="briefing/2026-11-21-conflict.html">Full conflict and geopolitics briefing →</a>
+  </div>
+  
+  <div class="panel topic-card">
+    <div class="muted small" style="display:flex;justify-content:space-between;gap:8px;align-items:center">
+      <span>Economy · 2026-11-21</span><span class="spi-pill band-normal">Normal</span>
+    </div>
+    <p class="t-head">Economic fundamentals remain sound with a zero Sahm rule reading, though financial markets show brief spikes in volatility.</p>
+    
+    <details class="small"><summary>Read the summary</summary><div class="prose"><h3>Current Assessment</h3>
+<p>The broad economy remains in the normal range, with our aggregate economic index standing at 28.5 out of 100. Core underlying indicators show steady stability across employment and broader economic activity. The real-time Sahm rule indicator registers at 0.0 points, comfortably beneath the 0.5-point threshold that historically marks the start of an economic downturn. In addition, weather- and weekday-adjusted US grid electricity demand is running 0.788% above baseline expectations over the past four weeks, signalling resilient commercial and industrial activity.</p>
+<p>Financial markets reflect some selective nervousness. The VIX volatility index registered at 28.44, driving a modest 7-day uptick of 5.8 points in the overall risk score. High-yield credit spreads closed at 3.52 points. However, broader financial plumbing remains accommodated, with the Chicago Fed Financial Conditions Index reading -0.478 and the 10-year minus 3-month Treasury yield curve sitting positively sloped at 0.60 points.</p>
+<h3>Outlook and Forecasts</h3>
+<p>We assess the near-term probability of entering a recession as low: 0.3% over the next week, 1.3% over one month, and 2.5% over three months. These near-term odds closely match prediction markets, which price a three-month recession risk at roughly 2.8%. Looking out to the six-month and one-year horizons, we assign probabilities of 11% and 26%, respectively. The 1-year estimate is in line with consensus market indicators (28.3%), capturing standard late-cycle vulnerabilities while recognizing that hard macroeconomic data has not deteriorated.</p>
+<h3>Key Indicators to Monitor</h3>
+<p>We will watch for any deterioration in labor metrics via updates to the Sahm rule, persistent widening in high-yield credit spreads beyond 4.5 points, or an inversion of the yield curve back into negative territory.</p></div></details>
+    <a class="small" href="briefing/2026-11-21-economy.html">Full economy briefing →</a>
+  </div>
+  
+  <div class="panel topic-card">
+    <div class="muted small" style="display:flex;justify-content:space-between;gap:8px;align-items:center">
+      <span>Disease · 2026-11-21</span><span class="spi-pill band-elevated">Elevated</span>
+    </div>
+    <p class="t-head">Seasonal respiratory illness and strong El Niño indicators elevate the disease index, while novel pandemic risk remains steady at baseline.</p>
+    
+    <details class="small"><summary>Read the summary</summary><div class="prose"><p>The Disease index stands at 67.0 today, placing it in the elevated band primarily due to early-season surges in typical winter respiratory pathogens and sustained climatic anomalies. Emergency department visits attributed to influenza have climbed to 2.48% of total visits (stress score 3.13), while wastewater surveillance indicates moderate viral activity for both SARS-CoV-2 (median viral activity level of 6.345) and influenza A (3.03). Simultaneously, NOAA's Oceanic Niño Index indicates a strong El Niño pattern with an anomaly of 2.46°C, which factors into systemic environmental disease tracking.</p>
+<p>Despite the elevated composite index, the forward-looking probability of a true pandemic event—defined as a WHO-declared Public Health Emergency of International Concern for a novel pathogen or confirmed sustained human-to-human transmission of H5N1 in the United States—remains anchored near historical base rates. Historically, major novel-pathogen emergencies occur roughly once every twenty years (such as 2009 H1N1 and 2020 COVID-19), establishing a baseline annualized probability around 5%. Today's near-term probabilities are assessed at 0.1% over one week, 0.4% over one month, 1.3% over three months, 2.6% over six months, and 5.5% over the full year.</p>
+<p>Recent global surveillance reports, such as four locally acquired chikungunya cases reported by Swiss authorities in Ticino, represent localized vector-borne dynamics rather than systemic respiratory threats. We continue to monitor domestic H5N1 poultry and dairy surveillance alongside emergency department syndromic signals. A material upward revision in pandemic probability would require evidence of secondary and tertiary viral transmission among humans or genetic adaptations signaling efficient airborne transmission in mammals.</p></div></details>
+    <a class="small" href="briefing/2026-11-21-disease.html">Full disease briefing →</a>
+  </div>
+  
+  <div class="panel topic-card">
+    <div class="muted small" style="display:flex;justify-content:space-between;gap:8px;align-items:center">
+      <span>Infrastructure and natural hazards · 2026-11-21</span><span class="spi-pill band-elevated">Elevated</span>
+    </div>
+    <p class="t-head">Infrastructure risk remains elevated on persistent cyber exploitation activity, though physical hazards and space weather remain quiet.</p>
+    
+    <details class="small"><summary>Read the summary</summary><div class="prose"><h3>Current Infrastructure Posture</h3>
+<p>The infrastructure and natural hazards composite index sits at 64.5, maintaining an <strong>elevated</strong> posture after a 5.0-point weekly rise. The primary source of pressure remains concentrated in the cyber domain. The Cybersecurity and Infrastructure Security Agency (CISA) has tracked 36 newly exploited vulnerabilities over the past 30 days, representing an elevated stress score of 1.91 standard deviations above baseline. Additionally, one actively exploited flaw in industrial control systems has been cataloged over the trailing 90 days.</p>
+<p>Recent law enforcement operations highlight the sustained adversarial focus on critical domestic supply chains. International authorities disrupted a ransomware network in Ukraine extorting US energy and healthcare entities, while US prosecutors secured extraditions of affiliates involved in hospital ransomware campaigns. While enforcement helps degrade operational capacity, threat actors continue targeting systemic bottlenecks such as pipelines, hospital systems, and pharmacy claims aggregators.</p>
+<h3>Physical and Space Hazards</h3>
+<p>Physical and space weather indicators remain quiescent. Space Weather Prediction Center readings show a maximum planetary K-index of 2.67, indicating quiet geomagnetic conditions well below the threshold (Kp 8+) that strains long-distance electrical transmission networks. Global seismic activity registered five magnitude 6.5+ earthquakes over the past month, with no significant operational fallout for domestic ports or distribution corridors.</p>
+<h3>Probability Outlook</h3>
+<p>Historically, severe systemic infrastructure failures—such as the 2021 Colonial Pipeline shutdown, Winter Storm Uri, or the 2024 Change Healthcare outage—occur roughly once every 4 to 5 years (a 20% annual base rate). Current elevated software vulnerability pressure and active targeting keep the 1-week probability at 1.5% and the 1-month probability at 5.0%, slightly above historical base rates (0.43% and 1.82%, respectively). In the absence of an imminent severe weather system or an active operational shutdown, no extraordinary household actions are recommended beyond routine preparedness.</p></div></details>
+    <a class="small" href="briefing/2026-11-21-infrastructure.html">Full infrastructure and natural hazards briefing →</a>
+  </div>
+  
+</div>
+
+
+<div class="section-title"><h2>Last 90 days</h2></div>
+<div class="grid g2">
+  <div class="panel"><h3>Threat indices</h3><div id="c-t" class="chart" style="height:260px"></div></div>
+  <div class="panel"><h3>Incoming pressure</h3><div id="c-p" class="chart" style="height:260px"></div></div>
+</div>
+
+<div class="section-title"><h2>Incoming pressure by shortage domain</h2><span class="small muted">sum of link weight × above-normal threat z-score</span></div>
+<div class="panel"><div class="table-wrap"><table>
+  <thead><tr><th>Domain</th><th style="width:30%">Pressure</th><th>Linked threats (weight × z today)</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Fuel</strong></td><td><div class="pressure" title="Incoming pressure: sum of link weight × above-normal threat z-score. 0 = no linked threat above normal.">
+  <div class="meter"><span style="width:12.0%; background:var(--faint)"></span></div>
+  <div class="d">incoming 0.4 (-0.5 7d)</div>
+</div></td>
+      <td class="small muted">Conflict and geopolitics (1 × 0.00); Infrastructure and natural hazards (1 × 0.37)</td></tr>
+  
+    <tr><td><strong>Natural gas</strong></td><td><div class="pressure" title="Incoming pressure: sum of link weight × above-normal threat z-score. 0 = no linked threat above normal.">
+  <div class="meter"><span style="width:6.0%; background:var(--faint)"></span></div>
+  <div class="d">incoming 0.2 (-0.5 7d)</div>
+</div></td>
+      <td class="small muted">Conflict and geopolitics (1 × 0.00); Infrastructure and natural hazards (0.5 × 0.37)</td></tr>
+  
+    <tr><td><strong>Fertilizer</strong></td><td><div class="pressure" title="Incoming pressure: sum of link weight × above-normal threat z-score. 0 = no linked threat above normal.">
+  <div class="meter"><span style="width:0.0%; background:var(--faint)"></span></div>
+  <div class="d">incoming 0.0 (-0.6 7d)</div>
+</div></td>
+      <td class="small muted">Conflict and geopolitics (1 × 0.00)</td></tr>
+  
+    <tr><td><strong>Food</strong></td><td><div class="pressure" title="Incoming pressure: sum of link weight × above-normal threat z-score. 0 = no linked threat above normal.">
+  <div class="meter"><span style="width:21.0%; background:var(--faint)"></span></div>
+  <div class="d">incoming 0.6 (-0.1 7d)</div>
+</div></td>
+      <td class="small muted">Conflict and geopolitics (0.5 × 0.00); Infrastructure and natural hazards (0.5 × 0.37); Economy (0.5 × 0.00); Disease (1 × 0.44)</td></tr>
+  
+    <tr><td><strong>Medicines</strong></td><td><div class="pressure" title="Incoming pressure: sum of link weight × above-normal threat z-score. 0 = no linked threat above normal.">
+  <div class="meter"><span style="width:21.0%; background:var(--faint)"></span></div>
+  <div class="d">incoming 0.6 (+0.2 7d)</div>
+</div></td>
+      <td class="small muted">Infrastructure and natural hazards (0.5 × 0.37); Disease (1 × 0.44)</td></tr>
+  </tbody>
+</table></div></div>
+
+<div class="section-title"><h2>Event bumps</h2></div>
+<div class="grid">
+  <div class="panel">
+    <h3>Active</h3>
+    <ul class="news"><li class="empty">No active events.</li></ul>
+  </div>
+  
+</div>
+
+<div class="section-title"><h2>Map</h2><span class="small muted">heat at listed sites, watched airspace, US port queues, storm cones and disaster alerts. Scroll to zoom, drag to move.</span></div>
+<div class="panel"><div id="c-map" class="threat-map" role="img" aria-label="World map of watched sites, airspace boxes, ports, storms and disaster alerts"></div>
+  <p class="small faint" style="margin:.5em 0 0">A box or port with no reading means no coverage, not zero traffic. Heat detections can be fires, flares or clouds; they go to the LLM for review and never alert on their own.</p></div>
+
+<div class="section-title"><h2>Signals past their threshold</h2><span class="small muted">flags for review, not alarms</span></div>
+<div class="panel">
+  <p class="empty">No signal is past its threshold.</p>
+</div>
+
+<div class="section-title"><h2>Crowd vs model</h2><span class="small muted">model from the 2026-11-21 briefing; gaps over 15 points must be explained in the briefing</span></div>
+<div class="panel">
+  <div class="table-wrap"><table>
+    <thead><tr><th>Event</th><th>Horizon</th><th class="num">Crowd</th><th class="num">Model</th><th class="num">Gap</th><th>Markets</th></tr></thead>
+    <tbody><tr>
+      <td><strong>Driver: US recession begins</strong></td><td>3m</td><td class="num mono">2.8%</td>
+      <td class="num mono">2.5%</td>
+      <td class="num mono">-0</td>
+      <td class="small"><div><a href="https://polymarket.com/event/us-recession-by-end-of-2026" target="_blank" rel="noopener">US recession by end of 2026?</a> <span class="faint">Polymarket, 3.0%, closes 2027-01-31</span></div><div><a href="https://kalshi.com/markets/kxrecssnber" target="_blank" rel="noopener">Will there be a recession in 2026?</a> <span class="faint">Kalshi, 2.5%, closes 2027-01-31</span></div></td></tr><tr>
+      <td><strong>Driver: US recession begins</strong></td><td>1y</td><td class="num mono">28.2%</td>
+      <td class="num mono">26.0%</td>
+      <td class="num mono">-2</td>
+      <td class="small"><div><a href="https://polymarket.com/event/us-recession-by-end-of-2027-20260807185409760" target="_blank" rel="noopener">US recession by end of 2027?</a> <span class="faint">Polymarket, 31.0%, closes 2027-12-31</span></div><div><a href="https://kalshi.com/markets/kxrecssnber" target="_blank" rel="noopener">Will there be a recession in 2027?</a> <span class="faint">Kalshi, 25.5%, closes 2028-01-31</span></div></td></tr><tr>
+      <td><strong>Driver: Hormuz reopens</strong></td><td>1w</td><td class="num mono">0.4%</td>
+      <td class="num mono">1.0%</td>
+      <td class="num mono">+1</td>
+      <td class="small"><div><a href="https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-november-30-20260810151158765" target="_blank" rel="noopener">Strait of Hormuz traffic returns to normal by November 30?</a> <span class="faint">Polymarket, 0.4%, closes 2026-12-01</span></div></td></tr><tr class="gap-wide">
+      <td><strong>Driver: Hormuz reopens</strong></td><td>1m</td><td class="num mono">26.5%</td>
+      <td class="num mono">2.5%</td>
+      <td class="num mono">-24</td>
+      <td class="small"><div><a href="https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31" target="_blank" rel="noopener">Strait of Hormuz traffic returns to normal by December 31?</a> <span class="faint">Polymarket, 2.9%, closes 2027-01-01</span></div><div><a href="https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31" target="_blank" rel="noopener">Strait of Hormuz traffic returns to normal by December 15?</a> <span class="faint">Polymarket, 50.0%, closes 2026-12-31</span></div></td></tr><tr>
+      <td><strong>Driver: Hormuz reopens</strong></td><td>3m</td><td class="num mono">6.0%</td>
+      <td class="num mono">10.0%</td>
+      <td class="num mono">+4</td>
+      <td class="small"><div><a href="https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-byptptpt" target="_blank" rel="noopener">Strait of Hormuz traffic returns to normal by January 31, 2027?</a> <span class="faint">Polymarket, 6.0%, closes 2027-02-01</span></div></td></tr><tr>
+      <td><strong>Driver: Hormuz reopens</strong></td><td>6m</td><td class="num mono">26.5%</td>
+      <td class="num mono">35.0%</td>
+      <td class="num mono">+8</td>
+      <td class="small"><div><a href="https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-byptptpt" target="_blank" rel="noopener">Strait of Hormuz traffic returns to normal by June 30, 2027?</a> <span class="faint">Polymarket, 26.5%, closes 2027-07-01</span></div></td></tr><tr>
+      <td><strong>Driver: Hormuz reopens</strong></td><td>1y</td><td class="num mono">44.0%</td>
+      <td class="num mono">55.0%</td>
+      <td class="num mono">+11</td>
+      <td class="small"><div><a href="https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-byptptpt" target="_blank" rel="noopener">Strait of Hormuz traffic returns to normal by December 31, 2027?</a> <span class="faint">Polymarket, 44.0%, closes 2028-01-01</span></div></td></tr><tr>
+      <td><strong>Driver: new conflict shock</strong></td><td>1m</td><td class="num mono">2.4%</td>
+      <td class="num mono">0.9%</td>
+      <td class="num mono">-1</td>
+      <td class="small"><div><a href="https://polymarket.com/event/will-china-blockade-taiwan-by-in-2026" target="_blank" rel="noopener">Will China blockade Taiwan in 2026?</a> <span class="faint">Polymarket, 2.4%, closes 2027-01-01</span></div></td></tr></tbody>
+  </table></div>
+  <p class="small faint" style="margin:.6em 0 0">Each market anchors the horizon nearest its close date. Some are proxies: recession markets use their own definitions and the conflict market covers only a Taiwan blockade. Major infrastructure disruption has no market.</p>
+  
+</div>
+
+<div class="grid g2" style="margin-top:16px">
+  <div class="panel">
+    <h2>Threat news</h2>
+    <ul class="news">
+      <li><div class="h"><a href="https://therecord.media/ukraine-ransomware-arrests-cyber" target="_blank" rel="noopener">Ukraine exposes ransomware network extorting US oil, healthcare firms</a></div>
+        <div class="s">Ukrainian authorities arrested members of a ransomware network that extorted US oil and healthcare firms.</div>
+        <div class="m"><span class="concern c3">3</span><span class="badge">infrastructure</span><span>The Record</span><span>2026-11-19</span><span>official</span></div></li>
+    
+      <li><div class="h"><a href="https://www.crisisgroup.org/vid/africa/sudan/mo-ibrahim-sudan-unravelling" target="_blank" rel="noopener">Mo Ibrahim: Sudan Unravelling</a></div>
+        <div class="s">Discussion regarding ongoing violence and conflict unraveling Sudan and the wider region.</div>
+        <div class="m"><span class="concern c3">3</span><span class="badge">conflict</span><span>Crisis Group</span><span>2026-11-17</span><span>reported</span></div></li>
+    
+      <li><div class="h"><a href="https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/" target="_blank" rel="noopener">Ransomware affiliate suspect extradited to US, faces 27 years in prison</a></div>
+        <div class="s">A ransomware affiliate suspect was extradited to the US to face charges for targeting hospitals and healthcare entities.</div>
+        <div class="m"><span class="concern c2">2</span><span class="badge">infrastructure</span><span>BleepingComputer</span><span>2026-11-17</span><span>official</span></div></li>
+    
+      <li><div class="h"><a href="https://www.crisisgroup.org/spc/africa/south-sudan/briefing-un-security-council-update-situation-south-sudan" target="_blank" rel="noopener">Briefing to UN Security Council: Update on the Situation in South Sudan</a></div>
+        <div class="s">Briefing to the UN Security Council warns of a potential new cycle of sustained conflict in South Sudan.</div>
+        <div class="m"><span class="concern c2">2</span><span class="badge">conflict</span><span>Crisis Group</span><span>2026-11-17</span><span>official</span></div></li>
+    
+      <li><div class="h"><a href="https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx" target="_blank" rel="noopener">Kazakh ransomware hacking suspect extradited from Italy</a></div>
+        <div class="s">A suspect in ransomware attacks targeting healthcare organizations and companies was extradited to the United States from Italy.</div>
+        <div class="m"><span class="concern c2">2</span><span class="badge">infrastructure</span><span>The Record</span><span>2026-11-17</span><span>official</span></div></li>
+    
+      <li><div class="h"><a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON627" target="_blank" rel="noopener">Chikungunya virus disease - Switzerland</a></div>
+        <div class="s">Health authorities in Switzerland reported four locally acquired cases of chikungunya virus disease in the canton of Ticino.</div>
+        <div class="m"><span class="concern c1">1</span><span class="badge">disease</span><span>WHO Disease Outbreak News</span><span>2026-11-17</span><span>official</span></div></li>
+    </ul>
+  </div>
+  <div class="panel">
+    <h2>Context</h2>
+    <p class="small"><strong>ENSO:</strong> El Niño Advisory. El Niño continues to strengthen, with a strong-to-very strong El Niño likely through January-March 2027 (remaining greater than a 79% chance).</p>
+    <p class="small"><strong>Conflict deaths, 2026-09 (UCDP candidate data):</strong></p>
+    <div class="table-wrap"><table><tbody><tr><td class="small">Ukraine</td><td class="num mono small">6,202</td></tr><tr><td class="small">Yemen (North Yemen)</td><td class="num mono small">2,924</td></tr><tr><td class="small">Pakistan</td><td class="num mono small">667</td></tr><tr><td class="small">Ethiopia</td><td class="num mono small">609</td></tr><tr><td class="small">Nigeria</td><td class="num mono small">451</td></tr><tr><td class="small">Sudan</td><td class="num mono small">277</td></tr><tr><td class="small">Mexico</td><td class="num mono small">262</td></tr><tr><td class="small">Colombia</td><td class="num mono small">242</td></tr><tr><td class="small">Mali</td><td class="num mono small">194</td></tr><tr><td class="small">Somalia</td><td class="num mono small">194</td></tr></tbody></table></div>
+    
+  </div>
+</div>
+
+</main>
+<footer>Rebuilt Nov 21, 2026 09:52 · numbers computed in code; probabilities are informed judgment from gemini-flash-latest, not measurement.</footer>
+
+
+<script>
+(async function () {
+  SW.gauge('g-conflict', 49.00049465216746);
+  SW.gauge('g-economy', 28.46935106394376);
+  SW.gauge('g-disease', 67.04093918448658);
+  SW.gauge('g-infrastructure', 64.51082732174008);
+  
+  const d = await SW.json('data/threats.json');
+  const names = {"conflict": "Conflict and geopolitics", "economy": "Economy", "disease": "Disease", "infrastructure": "Infrastructure and natural hazards"}, pnames = {"fuel": "Fuel", "natgas": "Natural gas", "fertilizer": "Fertilizer", "food": "Food", "medicines": "Medicines"};
+  const pal = SW.palette();
+  SW.lines('c-t', Object.keys(names).map((k, i) => ({ name: names[k], data: d.T[k], color: pal[i] })), { yName: '0–100', daily: true });
+  SW.lines('c-p', Object.keys(pnames).map((k, i) => ({ name: pnames[k], data: d.P[k], color: pal[i] })), { yName: 'pressure', daily: true });
+
+  // Map: land outline from Natural Earth, drawn with no external tiles.
+  const land = await SW.json('static/vendor/ne_110m_land.json');
+  echarts.registerMap('land', land);
+  const m = d.map;
+  const ring = (b) => [[b[1], b[0]], [b[3], b[0]], [b[3], b[2]], [b[1], b[2]], [b[1], b[0]]];
+  const outline = (name, coords, color, dashed) => ({ name, coords, lineStyle: { color, width: dashed ? 1 : 1.6, type: dashed ? 'dashed' : 'solid' } });
+  const lines = [
+    ...m.boxes.map((b) => outline(b.name + (b.control ? '' : b.ratio == null ? ': no coverage' : ': ' + b.ratio + '× norm'), ring(b.box), b.control ? SW.css('--faint') : b.ratio != null && b.ratio < 0.5 ? SW.css('--severe') : SW.css('--s2'), b.control)),
+    ...m.ports.map((p) => outline(p.name + (p.ships == null ? ': no coverage' : ': ' + p.ships + ' ships at anchor'), ring(p.box), SW.css('--s3'))),
+    outline('Gulf Coast refinery corridor', ring(m.corridor), SW.css('--elevated'), true),
+    ...m.storms.filter((s) => s.cone && s.cone.length).map((s) => outline(s.name + ' forecast cone', s.cone.map((p) => [p[1], p[0]]), s.crosses_corridor ? SW.css('--severe') : SW.css('--high'))),
+  ];
+  const c = SW.make('c-map');
+  c.setOption({
+    tooltip: { trigger: 'item', backgroundColor: SW.css('--panel'), borderColor: SW.css('--border'), textStyle: { color: SW.css('--text'), fontSize: 12 } },
+    legend: { top: 0, textStyle: { color: SW.css('--muted'), fontSize: 12 } },
+    geo: { map: 'land', roam: true, boundingCoords: [[-130, 68], [135, 5]], silent: true, itemStyle: { areaColor: SW.css('--panel-2'), borderColor: SW.css('--border') } },
+    series: [
+      { type: 'lines', name: 'Watched areas', coordinateSystem: 'geo', polyline: true, silent: false, data: lines, z: 3,
+        tooltip: { formatter: (p) => p.data.name } },
+      { type: 'scatter', name: 'Listed sites', coordinateSystem: 'geo', symbolSize: (v) => (v[2] > 0 ? 11 : 5), z: 4,
+        data: m.sites.map((s) => ({ name: s.name, value: [s.lon, s.lat, s.recent], kind: s.kind, avg: s.avg_90d,
+          itemStyle: { color: s.recent > 0 && s.avg_90d != null && s.avg_90d < 0.1 ? SW.css('--severe') : s.recent > 0 ? SW.css('--elevated') : SW.css('--s1') } })),
+        tooltip: { formatter: (p) => p.name + ' (' + p.data.kind + ')<br>Detections, last 2 days: ' + p.value[2] + '<br>90-day average: ' + (p.data.avg == null ? 'no data' : p.data.avg + ' a day') } },
+      { type: 'scatter', name: 'Disaster alerts', coordinateSystem: 'geo', symbol: 'triangle', symbolSize: 9, z: 4,
+        data: m.alerts.filter((a) => a.lonlat).map((a) => ({ name: a.name, value: a.lonlat, level: a.level, itemStyle: { color: a.level === 'Red' ? SW.css('--severe') : SW.css('--high') } })),
+        tooltip: { formatter: (p) => p.name + ' (' + p.data.level + ')' } },
+      { type: 'scatter', name: 'Storms', coordinateSystem: 'geo', symbol: 'diamond', symbolSize: 13, z: 5,
+        data: m.storms.filter((s) => s.lat != null).map((s) => ({ name: s.name, value: [s.lon, s.lat], knots: s.knots, itemStyle: { color: SW.css('--severe') } })),
+        tooltip: { formatter: (p) => p.name + ', ' + p.data.knots + ' kt' } },
+    ],
+  });
+
+  
+})();
+</script>
+
+</body>
+</html>
